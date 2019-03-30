@@ -1,25 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Main from './Main';
 import './App.css';
 
 class App extends Component {
+  constructor(){
+    super();
+    this.address = 'http://www.mrlesbomar.com/profile/index.html';
+    this.state = {currentObj:""}
+    this.timer = setInterval(() => {
+      this.timeToLoad();
+    }, 200);;
+    this.time = "";
+  }
+  timeToLoad(){
+    if((document.readyState === 'complete')&&(this.state.currentObj === "")){
+      this.setState({currentObj:<iframe title="easy" class="appIframe" src={this.address}/>});
+      this.time = new Date();
+    } else if(this.time !== ""){
+      if(new Date() - this.time  > 5000){
+        this.setState({currentObj:<Main />});
+        this.timer = "";
+      }
+    }
+
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        {this.state.currentObj}
       </div>
     );
   }

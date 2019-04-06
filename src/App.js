@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Main from './Main';
 import './App.css';
+import {Transition} from 'react-transition-group';
 
 class App extends Component {
   constructor(){
@@ -14,11 +15,11 @@ class App extends Component {
   }
   timeToLoad(){
     if((document.readyState === 'complete')&&(this.state.currentObj === "")){
-      this.setState({currentObj:<iframe title="easy" class="appIframe" src={this.address}/>});
+      this.setState({currentObj:<iframe id="intro" title="easy" className="appIframe" src={this.address}/>});
       this.time = new Date();
     } else if(this.time !== ""){
       if(new Date() - this.time  > 5000){
-        this.setState({currentObj:<Main />});
+        this.setState({currentObj:<Main/>});
         this.timer = "";
       }
     }
@@ -26,8 +27,8 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
-        {this.state.currentObj}
+      <div className="App">
+          {this.state.currentObj}
       </div>
     );
   }

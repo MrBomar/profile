@@ -12,8 +12,31 @@
   padding: 0px;
   overflow: hidden;
   background-color: rgb(30,30,30);
+  width: 100vw;
+  height: 100vh;
 }
 
-.dark{
-  background-color: rgb(30,30,30);
+.nav{
+  display: inline-block;
+  text-align: center;
+  background-color: black;
+}
+
+.main{
+  margin-top: 7.5vh;
+  margin-left: 10vw;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  width: 80vw;
+  height: 85vh;
+  background-color: white;
+  border: 5px outset #9a9;
+  -webkit-box-shadow: 15px 15px 0px 0px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    15px 15px 0px 0px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         15px 15px 0px 0px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.NavPanelButton{
+  color: white;
+  width: 100%;
 }

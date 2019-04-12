@@ -1,3 +1,8 @@
+/* Landscape Layout */
+*{
+  box-sizing: border-box;
+}
+
 .appIframe{
   height: 100vh;
   width: 100vw;
@@ -7,7 +12,6 @@
 
 .App {
   text-align: center;
-  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
@@ -23,20 +27,62 @@
 }
 
 .main{
-  margin-top: 7.5vh;
-  margin-left: 10vw;
   display: grid;
-  grid-template-columns: 20% 80%;
-  width: 80vw;
-  height: 85vh;
+  grid-template-columns: auto 70% auto;
   background-color: white;
-  border: 5px outset #9a9;
-  -webkit-box-shadow: 15px 15px 0px 0px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    15px 15px 0px 0px #ccc;  /* Firefox 3.5 - 3.6 */
-  box-shadow:         15px 15px 0px 0px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
-.NavPanelButton{
-  color: white;
-  width: 100%;
+.main-inner{
+  width: 70vw;
+  height: 100vh;
+  margin-left: 15vw;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 10% 90%;
+}
+
+.main nav {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.main main {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.main header {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #49205E;
+}
+
+/* Customer Style Classes */
+
+.bg-cust-gold{
+  background-color: #D9E254;
+}
+
+.hide{
+  display: none;
+}
+
+/*React Transition Group*/
+.my-node-enter{
+  opacity: 0;
+}
+
+.my-node-enter-active{
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.my-node-exit{
+  opacity: 1;
+}
+
+.my-node-exit-active{
+  opacity: 0;
+  transition: opacity 200ms;
 }

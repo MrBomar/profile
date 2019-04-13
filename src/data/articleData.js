@@ -3,328 +3,62 @@ let articles = [
         articleID:1,
         title:"Tic Tac Toe",
         description:"A simple tic tac toe game. Play against the computer to see which is smarter.",
-        keywords:"html css javascript game tic tac toe dom",
+        keywords:"html css javascript game tic tac toe dom game application",
         author:"Leslie C. Bomar",
         publishedDate:"2018",
         type:"project",
         image:"https://mrlesbomar.com/projects/screenshots/tic-tac-toe.jpg",
-        articleElements:[
-            {
-                sequence:1,
-                tag:"h1",
-                properties:{
-                    innterText:"About Me"
-                }
-            },
-            {
-                sequence:2,
-                tag:"hr",
-                properties:{},
-            },
-            {
-                sequence:3,
-                tag:"p",
-                properties:{
-                        innterText:"Yada Yada Yada, this is all about me"
-                }
-            },
-            {
-                sequence:4,
-                tag:"h2",
-                properties:{
-                        innerText:"Experience"
-                }
-            },
-            {
-                sequence:5,
-                tag:"p",
-                properties:{
-                        innterText:"A bunch of stuff about what I've done"
-                }
-                
-            },
-            {
-                sequence:6,
-                tag:"a",
-                properties:{
-                    innerText:"Launch Tic-Tac-Toe",
-                    href:"https://mrlesbomar.com/games/tic-tac-toe.html"
-                }
-            }
-        ]
+        publishedLocation:"https://mrlesbomar.com/games/tic-tac-toe.html",
+        repository:"https://github.com/MrBomar/tic-tac-toe"
     },
     {
         articleID:123456,
         title:"Solitaire",
         description:"A Vanilla.JS card game degined and built without any frameworks or images.",
-        keywords:"vanilla javascript solitaire css html5 html dom promises xmlhttprequest ajax",
+        keywords:"vanilla javascript solitaire css html5 html dom promises xmlhttprequest ajax php sql pdo mariahdb object oriented class recursive api cgi restful application game",
         author:"Leslie C. Bomar",
         publishedDate:"04/11/2019",
         type:"project",
         image:"https://mrlesbomar.com/projects/screenshots/solitaire.jpg",
-        articleElements:[
-            {
-                sequence:1,
-                tag:"h1",
-                properties:{
-                    innterText:"Solitaire"
-                }
-            },
-            {
-                sequence:2,
-                tag:"hr",
-                properties:[],
-            },
-            {
-                sequence:3,
-                tag:"p",
-                properties:{
-                    innterText:"Yada Yada Yada, this is all about me"
-                }
-            },
-            {
-                sequence:4,
-                tag:"h2",
-                properties:{
-                    innerText:"Experience"
-                }
-            },
-            {
-                sequence:5,
-                tag:"p",
-                properties:{
-                    innterText:"A bunch of stuff about what I've done"
-                }
-            },
-            {
-                sequence:6,
-                tag:"a",
-                properties:{
-                    href:"https://mrlesbomar.com/solitaire/solitaire.html",
-                    innerText:"Play the game"
-                }
-            }
-        ]
+        publishedLocation:"https://mrlesbomar.com/games/solitaire.html",
+        repository:"https://github.com/MrBomar/solitaire"
     },
     {
         articleID:123456,
         title:"Personal Website",
         description:"Designed and built using React.js, tachyons, and CSS Transitions.",
-        keywords:"react css transitions profile personal portfolio",
+        keywords:"react css transitions profile personal portfolio json javascript html css tachyons ajax pdo mariahdb php sql html5 api cgi restful",
         author:"Leslie C. Bomar",
         publishedDate:"04/13/2019",
         type:"project",
+        image:"https://mrlesbomar.com/projects/screenshots/personal-website2.png",
+        publishedLocation:"https://mrlesbomar.com/",
+        repository:"https://github.com/MrBomar/profile"
+    },
+    {
+        articleID:123456,
+        title:"Code Animation",
+        description:"An animation I put together that types out Javascript code so that it resembles VSCode.",
+        keywords:"animate js javascript recursive splash landing page json css object oriented class",
+        author:"Leslie C. Bomar",
+        publishedDate:"04/11/2019",
+        type:"project",
         image:"https://mrlesbomar.com/projects/screenshots/personal-website.png",
-        articleElements:[
-            {
-                sequence:1,
-                tag:"h1",
-                properties:[
-                    {
-                        innterText:"About Me"
-                    }
-                ],
-            },
-            {
-                sequence:2,
-                tag:"hr",
-                properties:[],
-            },
-            {
-                sequence:3,
-                tag:"p",
-                properties:[
-                    {
-                        innterText:"Yada Yada Yada, this is all about me"
-                    }
-                ],
-            },
-            {
-                sequence:4,
-                tag:"h2",
-                properties:[
-                    {
-                        innerText:"Experience"
-                    }
-                ]
-            },
-            {
-                sequence:5,
-                tag:"p",
-                properties:[
-                    {
-                        innterText:"A bunch of stuff about what I've done"
-                    }
-                ]
-            },
-            {
-                sequence:6,
-                tag:"a",
-                properties:{
-                    href:"https://mrlesbomar.com/index.html",
-                    innerText:"Visit my Website"
-                }
-            }
-        ]
+        publishedLocation:"https://mrlesbomar.com/",
+        repository:"https://github.com/MrBomar/Code-Animation"
     },
     {
         articleID:123456,
-        title:"About Me",
-        description:"A short article describing my work history, hobbies, and future goals and plans.",
-        keywords:"web developer work history about me full stack leslie bomar programmer",
+        title:"Microsoft Access Code Samples",
+        description:"A collection of the code from an application I wrote for a logistics operation.",
+        keywords:"microsoft visual basic for applications outlook access dynamic sql html logistics application api google maps user accounts version control vba",
         author:"Leslie C. Bomar",
-        publishedDate:"04/11/2019",
-        type:"profile",
+        publishedDate:"2018",
+        type:"project",
         image:"http://www.staticwhich.co.uk/static/images/products/no-image/no-image-available.png",
-        articleElements:[
-            {
-                sequence:1,
-                tag:"h1",
-                properties:[
-                    {
-                        innterText:"About Me"
-                    }
-                ],
-            },
-            {
-                sequence:2,
-                tag:"hr",
-                properties:[],
-            },
-            {
-                sequence:3,
-                tag:"p",
-                properties:[
-                    {
-                        innterText:"Yada Yada Yada, this is all about me"
-                    }
-                ],
-            },
-            {
-                sequence:4,
-                tag:"h2",
-                properties:[
-                    {
-                        innerText:"Experience"
-                    }
-                ]
-            },
-            {
-                sequence:5,
-                tag:"p",
-                properties:[
-                    {
-                        innterText:"A bunch of stuff about what I've done"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        articleID:123456,
-        title:"About Me",
-        description:"A short article describing my work history, hobbies, and future goals and plans.",
-        keywords:"web developer work history about me full stack leslie bomar programmer",
-        author:"Leslie C. Bomar",
-        publishedDate:"04/11/2019",
-        type:"profile",
-        image:"http://www.staticwhich.co.uk/static/images/products/no-image/no-image-available.png",
-        articleElements:[
-            {
-                sequence:1,
-                tag:"h1",
-                properties:[
-                    {
-                        innterText:"About Me"
-                    }
-                ],
-            },
-            {
-                sequence:2,
-                tag:"hr",
-                properties:[],
-            },
-            {
-                sequence:3,
-                tag:"p",
-                properties:[
-                    {
-                        innterText:"Yada Yada Yada, this is all about me"
-                    }
-                ],
-            },
-            {
-                sequence:4,
-                tag:"h2",
-                properties:[
-                    {
-                        innerText:"Experience"
-                    }
-                ]
-            },
-            {
-                sequence:5,
-                tag:"p",
-                properties:[
-                    {
-                        innterText:"A bunch of stuff about what I've done"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        articleID:123456,
-        title:"About Me",
-        description:"A short article describing my work history, hobbies, and future goals and plans.",
-        keywords:"web developer work history about me full stack leslie bomar programmer",
-        author:"Leslie C. Bomar",
-        publishedDate:"04/11/2019",
-        type:"profile",
-        image:"http://www.staticwhich.co.uk/static/images/products/no-image/no-image-available.png",
-        articleElements:[
-            {
-                sequence:1,
-                tag:"h1",
-                properties:[
-                    {
-                        innterText:"About Me"
-                    }
-                ],
-            },
-            {
-                sequence:2,
-                tag:"hr",
-                properties:[],
-            },
-            {
-                sequence:3,
-                tag:"p",
-                properties:[
-                    {
-                        innterText:"Yada Yada Yada, this is all about me"
-                    }
-                ],
-            },
-            {
-                sequence:4,
-                tag:"h2",
-                properties:[
-                    {
-                        innerText:"Experience"
-                    }
-                ]
-            },
-            {
-                sequence:5,
-                tag:"p",
-                properties:[
-                    {
-                        innterText:"A bunch of stuff about what I've done"
-                    }
-                ]
-            }
-        ]
+        publishedLocation:"none",
+        repository:"https://github.com/MrBomar/access-code-snippets"
+
     }
 ]
 

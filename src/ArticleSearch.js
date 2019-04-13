@@ -12,7 +12,7 @@ class ArticleSearch extends Component{
         if(event.target.value === ""){
             this.setState({search:[]});
         } else {
-            this.setState({search:event.target.value.toLowerCase().split(" ")});
+            this.setState({search:event.target.value.toLowerCase().trim().split(" ")});
         }
     }
     cycleWords = () => {
@@ -25,7 +25,11 @@ class ArticleSearch extends Component{
                 return article.keywords.includes(word);
             }).forEach(item=>justArticles.push(item));
         })
-        return justArticles;
+
+        //This code makes sure to return only unique articles.
+        return [...new Set(justArticles.map(art=>art.title))].map( nk => {
+            return articleData.find(art=>art.title === nk);
+        })
     }
     buildArticles(myData){
         return myData.map(article=>{

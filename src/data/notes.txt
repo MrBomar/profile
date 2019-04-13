@@ -1,0 +1,18 @@
+Data that every article needs
+
+uniqueID#
+Title
+Description/Summary
+Keywords
+Author
+Published Date
+Type
+
+Elements in the article
+    - Sequence
+    - Code Blocks
+    - Headers
+    - Paragraphs
+    - Images
+    - Horizontal Rules
+    - Links

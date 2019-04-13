@@ -4,7 +4,8 @@
 }
 
 .appIframe{
-  height: 100vh;
+  grid-row: 2;
+  height: calc(100vh - 70px);
   width: 100vw;
   overflow: hidden;
   border: none;
@@ -18,44 +19,34 @@
   background-color: rgb(30,30,30);
   width: 100vw;
   height: 100vh;
+  display: grid;
+  grid-template-rows: 70px auto;
 }
 
-.nav{
+nav{
+  grid-row: 1;
   display: inline-block;
   text-align: center;
   background-color: black;
 }
 
-.main{
-  display: grid;
-  grid-template-columns: auto 70% auto;
-  background-color: white;
-}
-
-.main-inner{
-  width: 70vw;
-  height: 100vh;
-  margin-left: 15vw;
-  display: grid;
-  grid-template-columns: 15% 85%;
-  grid-template-rows: 10% 90%;
-}
-
-.main nav {
-  grid-column: 1;
+main{
+  overflow-y: scroll;
   grid-row: 2;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1e9a0+0,eaefb5+100 */
+  background: #e1e9a0; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #e1e9a0 0%, #eaefb5 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #e1e9a0 0%,#eaefb5 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #e1e9a0 0%,#eaefb5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e9a0', endColorstr='#eaefb5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.main main {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.main header {
+header {
   grid-row: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  background-color: #49205E;
+  background-color:  rgb(30,30,30);
+  display: grid;
+  grid-template-columns: auto 146px;
+
 }
 
 /* Customer Style Classes */
@@ -64,7 +55,43 @@
   background-color: #D9E254;
 }
 
+.remove-top-border{
+  border-top: none;
+}
+
 .hide{
+  display: none;
+}
+
+.navButton {
+  display: block;
+  width: 50%;
+  height: 100%;
+  font-size: 14px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-left: 1px solid silver;
+}
+
+.leftButton {
+  border: none;
+}
+
+.navMenu {
+  position: static;
+  background-color: black;
+  border-radius: 15px;
+  color: silver;
+  width: 140px;
+  height: 64px;
+  border: 1px solid silver;
+  margin: 3px;
+}
+
+.navOpen {
   display: none;
 }
 
@@ -85,4 +112,56 @@
 .my-node-exit-active{
   opacity: 0;
   transition: opacity 200ms;
+}
+
+.myName {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 390px){
+  .navMenu{
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    right: 70px;
+    background-color: black;
+    border-radius: 15px;
+    color: silver;
+    width: 0;
+    height: 64px;
+    border: 1px solid silver;
+    margin: 3px;
+    transition: width 0.5s ease-in-out;
+  }
+
+  .navOpen {
+    display: block;
+    width: 64px;
+    height: 64px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin: 3px;
+    position: relative;
+    background-color: black;
+    color: silver;
+  }
+
+  .navButton {
+    opacity: 0;
+  }
+
+  .navMenuOpen{
+    width: calc(100vw - 76px);
+    opacity: 1;
+  }
+
+  .fade-in {
+    transition: opacity 0.3s ease-in-out 0.18s ;
+    opacity: 1;
+  }
+
+  header {
+    grid-template-columns: auto 76px;
+  }
 }

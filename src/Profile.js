@@ -3,7 +3,11 @@ import React, {Component} from 'react';
 class Profile extends Component{
     render(){
         return(
-            <div className="profile">This is where the stupid profile will go.</div>
+            <main className="bg-white ma2">
+                <h1>Profile</h1>
+                <hr></hr>
+                <p>This is where I get to yawn on about myself</p>
+            </main>
         )
     }
 }

@@ -16,24 +16,21 @@ class ArticleSearch extends Component{
         }
     }
     cycleWords = () => {
-        if(this.state.search.length === 0){
-            return articleData.map(article=>{
-                return <ArticleCard image={article.image} keywords={article.keywords} title={article.title} description={article.description}/>
-            })
-        } else {
-            let foundArticles = this.state.search.map(word=> {
-                return articleData.find(article => {
-                    return article.keywords.includes(word);
-                });
-            })
-            if(foundArticles.length > 0){
-                if(typeof foundArticles[0] !== "undefined"){                
-                    return foundArticles.map(article=>{
-                        return <ArticleCard image={article.image} keywords={article.keywords} title={article.title} description={article.description}/>
-                    }) 
-                }
-            }
-        };
+        return this.buildArticles( (this.state.search.length === 0)?articleData:this.filteredArticles() );
+    }
+    filteredArticles(){
+        let justArticles = [];
+        this.state.search.forEach(word=>{
+            articleData.filter(article=>{
+                return article.keywords.includes(word);
+            }).forEach(item=>justArticles.push(item));
+        })
+        return justArticles;
+    }
+    buildArticles(myData){
+        return myData.map(article=>{
+            return <ArticleCard image={article.image} keywords={article.keywords} title={article.title} description={article.description}/>
+        })
     }
     render(){
         return(

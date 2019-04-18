@@ -8,7 +8,7 @@ class ArticleCard extends Component{
     }
     render(){
         return(
-            <div className="tc bg-white dib br3 pa3 ma2 grow bw2 shadow-2 w5">
+            <div className="tc bg-white dib br3 ma2 grow bw2 shadow-2 w5">
                 <img src={this.props.image} alt={this.props.title}></img>
                 <h2>{this.props.title}</h2>
                 <p>{this.props.description}</p>

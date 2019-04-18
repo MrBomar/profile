@@ -38,7 +38,7 @@ class ArticleSearch extends Component{
     }
     render(){
         return(
-            <div>
+            <div id="articleSearch">
                 <div>
                     <input id="searchbox" onChange={this.onSearchType} className="ma2" type="input" name="searchBox" placeholder="...search my projects"></input>
                     <button onClick={this.cycleWords}>GO!</button>

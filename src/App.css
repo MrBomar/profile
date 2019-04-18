@@ -1,6 +1,25 @@
 /* Landscape Layout */
 *{
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+button {
+  outline: none;
+}
+
+.mySignature {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.columns2{
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
+.col1 {
+  border-right: 1px solid black;
 }
 
 .appIframe{
@@ -31,7 +50,7 @@ nav{
 }
 
 main{
-  overflow-y: scroll;
+  overflow-y: auto;
   grid-row: 2;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1e9a0+0,eaefb5+100 */
   background: #e1e9a0; /* Old browsers */
@@ -45,8 +64,16 @@ header {
   grid-row: 1;
   background-color:  rgb(30,30,30);
   display: grid;
-  grid-template-columns: auto 146px;
+  grid-template-columns: calc(100vw - 300px) 300px;
+  top: -70px;
+  width: 100vw;
+  position: absolute;
+  transition: top 250ms ease-in;
+}
 
+.showHeader {
+  top:0px;
+  /* position: static; */
 }
 
 /* Customer Style Classes */
@@ -65,10 +92,9 @@ header {
 
 .navButton {
   display: block;
-  width: 50%;
+  width: 147px;
   height: 100%;
   font-size: 14px;
-  position: relative;
   background-color: transparent;
   border: none;
   color: white;
@@ -85,10 +111,11 @@ header {
   background-color: black;
   border-radius: 15px;
   color: silver;
-  width: 140px;
+  width: 296px;
   height: 64px;
   border: 1px solid silver;
   margin: 3px;
+  z-index: 100;
 }
 
 .navOpen {
@@ -100,20 +127,52 @@ header {
   font-size: 20px;
 }
 
-@media screen and (max-width: 390px){
+p, li {
+  text-align: left;
+  line-height: 2;
+  margin: 0px 5vw 5vw 5vw;
+}
+
+#aboutMe {
+  width: 90%;
+  margin: 20px 5vw 20px 5vw;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px grey;
+}
+
+#aboutMeHeader {
+  padding: 50px;
+}
+
+@media screen and (max-width: 560px){
+  .columns2{
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+  }
+
+  .col1{
+    grid-row: 1;
+    border: none;
+  }
+
+  .col2{
+    grid-row: 2;
+  }
+
   .navMenu{
     opacity: 0;
     position: fixed;
-    top: 0px;
-    right: 70px;
+    top: 64px;
+    right: 0px;
     background-color: black;
     border-radius: 15px;
     color: silver;
-    width: 0;
-    height: 64px;
+    width: 128px;
+    height: 0px;
     border: 1px solid silver;
     margin: 3px;
-    transition: width 0.5s ease-in-out;
+    transition: height 0.5s ease-in-out;
   }
 
   .navOpen {
@@ -130,10 +189,17 @@ header {
 
   .navButton {
     opacity: 0;
+    height: 64px;
+    width: 128px;
+    border: 1px solid silver;
+  }
+
+  .leftButton {
+    border: none;
   }
 
   .navMenuOpen{
-    width: calc(100vw - 76px);
+    height: 128px;
     opacity: 1;
   }
 

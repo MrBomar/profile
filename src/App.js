@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Main from './Main';
+// import Main from './Main';
+import AboutMe from './AboutMe';
+import ArticleSearch from './ArticleSearch';
 import './App.css';
 import 'tachyons';
 
 class App extends Component {
   constructor(){
     super();
-    this.address = 'http://www.mrlesbomar.com/profile/index.html';
-    this.state = {currentObj:"", menuStatus:"closed"}
+    this.address = './profile/index.html';
+    this.state = {currentObj:"", menuStatus:"", childView:<AboutMe/>}
     this.timer = setInterval(() => {
       this.timeToLoad();
     }, 200);;
@@ -19,10 +21,10 @@ class App extends Component {
       if(this.time === "")this.time = new Date();
     } else if(this.time !== ""){
       if(new Date() - this.time  > 5000){
-        this.setState({currentObj:<Main/>});
+      document.getElementsByTagName("header")[0].classList.add("showHeader");
+      document.getElementsByTagName("main")[0].classList.add("showMain");
+      this.setState({currentObj:<AboutMe/>});
         clearInterval(this.timer);
-        // document.getElementsByTagName("header")[0].style.display = "grid";
-        // document.getElementsByTagName("header")[0].style.top = "0px";
       }
     }
   }
@@ -41,6 +43,14 @@ class App extends Component {
     }
     this.setState({menuStatus:stat})
   }
+  buttonClick = (event) => {
+    if(this.state.menuStatus === "closed")return true;
+    if(event.target.innerText === "Projects"){
+      this.setState({currentObj:<ArticleSearch/>});
+    } else {
+      this.setState({currentObj:<AboutMe/>});
+    }
+  }
   render() {
     return (
       <div className="App">
@@ -52,12 +62,14 @@ class App extends Component {
           <div>
             <button className="navOpen fr" onClick={this.navButtonClick}>&#9776;</button>
             <div id="navMenu" className="navMenu">
-                <button className="navButton fr" onClick={this.navButtonClick}>About Me</button>
-                <button className="navButton leftButton fr" onClick={this.navButtonClick}>Projects</button>
+                <button className="navButton fr" onClick={this.buttonClick}>About Me</button>
+                <button className="navButton leftButton fr" onClick={this.buttonClick}>Projects</button>
             </div>
           </div>
         </header>
+        <main>
           {this.state.currentObj}
+        </main>
       </div>
     );
   }

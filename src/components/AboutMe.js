@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
-import LinkButton from './components/LinkButton';
+import LinkButton from './LinkButton';
 
 const AboutMe = props => {
     return (
@@ -26,42 +26,44 @@ const AboutMe = props => {
                 <div className="col2">
                     <h2>Coding Highlights</h2>
                     <table>
-                        <tr>
-                            <td class="bullet">&bull;</td>
-                            <td>Designed and implemented a driver performance monitoring and reporting system that helped to identify unnecessary stops, extended breaks, and deviations from route planning. No tool for assessing route efficiency was in place before this tool, saw a 12% reduction in paid overtime.</td>
-                        </tr>
-                        <tr>
-                            <td class="bullet">&bull;</td>
-                            <td>Designed and implemented a route status reporting tool that incorporated automated HTML email reports.</td>
-                        </tr>
-                        <tr>
-                            <td class="bullet">&bull;</td>
-                            <td>Designed a bar-code solution currently used to track and build customer shipments.</td>
-                        </tr>
-                        <tr>
-                            <td class="bullet">&bull;</td>
-                            <td>Devised a route planning tool that combined historical delivery data with Google Maps routing to provide accurate routing estimates.</td>
-                        </tr>
-                        <tr>
-                            <td class="bullet">&bull;</td>
-                            <td>Implemented an Access client upgrade tool. Provided automated alerts to client users and automated the upgrade process for the users client application.</td>
-                        </tr>
-                        <tr>
-                            <td class="bullet">&bull;</td>
-                            <td>Designed and implemented a raw material discrepancy tracking system that reduced shortages by 80%.</td>
-                        </tr>
-                        <tr>
-                            <td class="bullet">&bull;</td>
-                            <td>Designed and implemented a raw material reordering system that reduced time spent assessing plant needs by 90%, and helped to reduce on-hand inventories by 20%.</td>
-                        </tr>
-                        <tr>
-                            <td class="bullet">&bull;</td>
-                            <td>Designed and implemented a raw material staging process that provided status updates, manged staging processed, and printed labels.</td>
-                        </tr>
-                        <tr>
-                            <td class="bullet">&bull;</td>
-                            <td>Designed and implemented a site wide MRO ordering and approval system used for office, maintenance, safety and production materials. Was instrumental in collecting data concerning buying habits and reducing waste.</td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td className="bullet">&bull;</td>
+                                <td>Designed and implemented a driver performance monitoring and reporting system that helped to identify unnecessary stops, extended breaks, and deviations from route planning. No tool for assessing route efficiency was in place before this tool, saw a 12% reduction in paid overtime.</td>
+                            </tr>
+                            <tr>
+                                <td className="bullet">&bull;</td>
+                                <td>Designed and implemented a route status reporting tool that incorporated automated HTML email reports.</td>
+                            </tr>
+                            <tr>
+                                <td className="bullet">&bull;</td>
+                                <td>Designed a bar-code solution currently used to track and build customer shipments.</td>
+                            </tr>
+                            <tr>
+                                <td className="bullet">&bull;</td>
+                                <td>Devised a route planning tool that combined historical delivery data with Google Maps routing to provide accurate routing estimates.</td>
+                            </tr>
+                            <tr>
+                                <td className="bullet">&bull;</td>
+                                <td>Implemented an Access client upgrade tool. Provided automated alerts to client users and automated the upgrade process for the users client application.</td>
+                            </tr>
+                            <tr>
+                                <td className="bullet">&bull;</td>
+                                <td>Designed and implemented a raw material discrepancy tracking system that reduced shortages by 80%.</td>
+                            </tr>
+                            <tr>
+                                <td className="bullet">&bull;</td>
+                                <td>Designed and implemented a raw material reordering system that reduced time spent assessing plant needs by 90%, and helped to reduce on-hand inventories by 20%.</td>
+                            </tr>
+                            <tr>
+                                <td className="bullet">&bull;</td>
+                                <td>Designed and implemented a raw material staging process that provided status updates, manged staging processed, and printed labels.</td>
+                            </tr>
+                            <tr>
+                                <td className="bullet">&bull;</td>
+                                <td>Designed and implemented a site wide MRO ordering and approval system used for office, maintenance, safety and production materials. Was instrumental in collecting data concerning buying habits and reducing waste.</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -78,7 +80,7 @@ const AboutMe = props => {
                 message="Visit my LinkedIn"
             />
             <LinkButton
-                link="https://stackoverflow.com"
+                link="https://stackexchange.com/users/12588875/leslie-bomar"
                 image="/images/stackoverflow-icon.png"
                 alt="stack overflow icon"
                 message="Visit my Stack Overflow"

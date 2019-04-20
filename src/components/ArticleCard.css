@@ -1,0 +1,14 @@
+.articleCard {
+    width: 300px;
+    background-color: white;
+    margin: 8px;
+    vertical-align: top;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.articleCard p{
+    margin:20px;
+    text-align: left;
+}

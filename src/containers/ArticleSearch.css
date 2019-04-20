@@ -1,0 +1,9 @@
+#articleResults{
+    text-align: center;
+    background-color: lightblue;
+}
+
+#searchDiv {
+    background-color: gainsboro;
+    border:1px solid black;
+}

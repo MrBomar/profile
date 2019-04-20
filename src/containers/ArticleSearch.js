@@ -1,12 +1,17 @@
 import React, {Component} from 'react';
-import ArticleCard from './ArticleCard'
-import articleData from './data/articleData';
+import ArticleCard from '../components/ArticleCard'
+import articleData from '../data/articleData';
+import './ArticleSearch.css';
 
 class ArticleSearch extends Component{
     constructor(){
         super();
         this.state = {search:[]}
         this.cycleWords = this.cycleWords.bind(this);
+        this.keywordClick = this.keywordClick.bind(this);
+    }
+    keywordClick = (event) =>{
+        this.setState({search:event.target.value.toLowerCase().trim().split(" ")});
     }
     onSearchType = (event) => {
         if(event.target.value === ""){
@@ -33,17 +38,24 @@ class ArticleSearch extends Component{
     }
     buildArticles(myData){
         return myData.map(article=>{
-            return <ArticleCard image={article.image} keywords={article.keywords} title={article.title} description={article.description}/>
+            return <ArticleCard 
+                        key={article.articleId}
+                        image={article.image}
+                        keywords={article.keywords}
+                        title={article.title}
+                        description={article.description}
+                        links={article.links}
+                        keywordClick={this.keywordClick}
+                    />
         })
     }
     render(){
         return(
             <div id="articleSearch">
-                <div>
+                <div id="searchDiv">
                     <input id="searchbox" onChange={this.onSearchType} className="ma2" type="input" name="searchBox" placeholder="...search my projects"></input>
-                    <button onClick={this.cycleWords}>GO!</button>
                 </div>
-                <div className="center">
+                <div id="articleResults">
                     {this.cycleWords()}
                 </div>
             </div>

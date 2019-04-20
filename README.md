@@ -1,3 +1,23 @@
+The standard create-react-app README.md is at the bottom.
+
+This project is my personal website, where I will be posting my projects. Using this website I will link to both the production versions of my projects plus my Git repositories.
+
+Additionally you can find my About Me page and contact information.
+
+Once I get some free time in my schedule I plan on adding writing articles and activating a blog.
+
+This project was put together using the following tools:
+    create-react-app
+    css-loader
+    tachyons
+
+I am studying the following and hope to implement them into my website:
+    react-router
+    react-transition-group
+
+The live website is being hosted on a PHP server provided by a2Hosting, which you can visit at:
+    https://mrlesbomar.com
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

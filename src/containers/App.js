@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import Main from './Main';
-import AboutMe from './AboutMe';
+import AboutMe from '../components/AboutMe';
 import ArticleSearch from './ArticleSearch';
 import './App.css';
 import 'tachyons';

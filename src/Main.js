@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import AboutMe from './AboutMe';
-import ArticleCard from './ArticleCard';
 import ArticleSearch from './ArticleSearch';
 
 class Main extends Component{

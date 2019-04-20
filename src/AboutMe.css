@@ -1,0 +1,41 @@
+#aboutMe {
+    background-color: white;
+}
+
+#aboutMeHeader {
+    padding-bottom: 30px;
+}
+
+.columns2{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.col1 {
+    border-right: 1px solid black;
+}
+
+p, table {
+    margin: 0px 50px 50px 50px;
+    line-height: 200%;
+}
+
+.bullet {
+    padding: 0px 10px 0px 10px;
+    vertical-align: top;
+    font-weight: bolder;
+}
+
+p, td {
+    text-align: left;
+}
+
+table {
+    border-spacing: 0px 25px;
+}
+
+.mySignature {
+    text-align: right;
+    margin: 0px 50px 50px 0px;
+}
+  

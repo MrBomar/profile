@@ -1,0 +1,26 @@
+.linkButton{
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    margin: 30px;
+    transition: transform 200ms ease-in-out;
+}
+
+.linkButton h5 {
+    margin: 0px;
+    display: inline-block;
+    line-height: 100%;
+    margin-bottom: 18px;
+}
+
+.linkButton img{
+    padding: 5px;
+    margin: 0px;
+    display: inline;
+    height: 48px;
+}
+
+.linkButton:hover{
+    transform: scale(1.1);
+}

@@ -8,20 +8,6 @@ button {
   outline: none;
 }
 
-.mySignature {
-  text-align: right;
-  margin-right: 20px;
-}
-
-.columns2{
-  display:grid;
-  grid-template-columns: 50% 50%;
-}
-
-.col1 {
-  border-right: 1px solid black;
-}
-
 .appIframe{
   grid-row: 2;
   height: calc(100vh - 70px);
@@ -52,12 +38,7 @@ nav{
 main{
   overflow-y: auto;
   grid-row: 2;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1e9a0+0,eaefb5+100 */
-  background: #e1e9a0; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #e1e9a0 0%, #eaefb5 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #e1e9a0 0%,#eaefb5 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #e1e9a0 0%,#eaefb5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e9a0', endColorstr='#eaefb5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: rgb(30,30,30);
 }
 
 header {
@@ -76,7 +57,7 @@ header {
   /* position: static; */
 }
 
-/* Customer Style Classes */
+/* Custom Style Classes */
 
 .bg-cust-gold{
   background-color: #D9E254;
@@ -125,24 +106,6 @@ header {
 .myName {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-}
-
-p, li {
-  text-align: left;
-  line-height: 2;
-  margin: 0px 5vw 5vw 5vw;
-}
-
-#aboutMe {
-  width: 90%;
-  margin: 20px 5vw 20px 5vw;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 10px 5px 10px grey;
-}
-
-#aboutMeHeader {
-  padding: 50px;
 }
 
 @media screen and (max-width: 560px){

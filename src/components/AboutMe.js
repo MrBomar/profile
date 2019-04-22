@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
-import LinkButton from './LinkButton';
+import Footer from './Footer';
 
 const AboutMe = props => {
     return (
@@ -8,8 +8,9 @@ const AboutMe = props => {
             <h1 id="aboutMeHeader">ABOUT ME</h1>
             <div className="columns2">
                 <div className="col1">
-                    <p>Im a programming hobbyist trying to get his first job in application development. I have spent the last year learning how to develop web applications using technologies like React, AXAJ, and SQL, but my experience in application development and programming in general is much more extensive. Professionally I have developed several Access solutions while employed by XPO Logistics and Valspar Coating. These applications involved a heavy dose of Visual Basic, HTML, and SQL and were essential in facilitating production, materials management, employee performance, and reducing redundancy and paperwork.</p>
-                    <p>My interest in programming started when my parents bought their first computer, a Compaq Presario. I was only 13 and at $1,600, they definitely didn't buy it for me. But, once they saw me checking out library books on computer programming, BASIC, and HTML, they decided right then and there that.....I wasn't permitted to use their computer. Thus I latched on to a Wal-Mart layaway plan to purchase my very own computer. I was a lucky kid. My papaw was a painting contractor and I was home schooled, so as long as I got my schooling done I could work for him. Six months and $700 later I was the proud owner of a refurbished Packard Bell with a whopping 66Mhz Intel 486, 4mb RAM, and 320mb hard drive.</p>
+                    <p>Over the last year I have spent my free time learning how to develop web applications using technologies like React, AXAJ, and SQL, but my experience in application development and programming. Professionally, I have developed several Access solutions while employed by XPO Logistics and Valspar Coating. These applications involved a heavy dose of Visual Basic, HTML, and SQL and were essential in facilitating production, materials management, employee performance, and reducing redundancy and paperwork.</p>
+                    <p>My interest in programming started when my parents bought their first computer, a Compaq Presario. I was 13 then and at $1,600, they definitely didn't buy it for me. But, once they saw me checking out library books on computer programming, BASIC, and HTML, they decided right then and there that.....I wasn't permitted to use their computer.</p>
+                    <p>Thus, seeing my opportunity dissapear before my eyes, I headed to wal-mart to place my very own computer on layaway. I cinsidered myself a lucky kid, my grandfather was a painting contractor and I was home schooled, so as long as I got my schooling done I could work for him. Six months and $700 later I was the proud owner of a refurbished Packard Bell with a whopping 66Mhz Intel 486, 4mb RAM, and 320mb hard drive.</p>
                     <p>
                         My uncle was an amateur Fortran programmer and hacker. It was he that gave me my first two programming books. An Internet for Dummies and a Microsoft QuickBasic, complete with a compiling version of QuickBasic. I created several text based applications, a couple simple games, and a NES ROM website. From there I moved to Visual C++ and started to experiment with Windows applications.
                     </p>
@@ -67,30 +68,7 @@ const AboutMe = props => {
                     </table>
                 </div>
             </div>
-            <LinkButton 
-                link="https://github.com/MrBomar" 
-                image="/images/github-icon.png" 
-                alt="github icon"
-                message="Visit my Github"
-            />
-            <LinkButton
-                link="https://linkedin.com"
-                image="/images/linkedin-icon.png"
-                alt="linked in icon"
-                message="Visit my LinkedIn"
-            />
-            <LinkButton
-                link="https://stackexchange.com/users/12588875/leslie-bomar"
-                image="/images/stackoverflow-icon.png"
-                alt="stack overflow icon"
-                message="Visit my Stack Overflow"
-            />
-            <LinkButton
-                link="mailto:mrlesbomar@gmail.com"
-                image="/images/gmail-icon.png"
-                alt="gmail icon"
-                message="Contact Me"
-            />
+            <Footer />
         </div>
     )
 }

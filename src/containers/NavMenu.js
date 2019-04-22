@@ -16,6 +16,7 @@ class NavMenu extends Component {
         }
     }
     buttonClick = (event) => {
+        console.log("Click");
         this.activateMenu();
         this.props.buttonClick(event.target.innerText);
     }

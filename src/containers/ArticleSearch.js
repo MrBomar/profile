@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ArticleCard from '../components/ArticleCard'
 import articleData from '../data/articleData';
+import Footer from '../components/Footer';
 import './ArticleSearch.css';
 
 class ArticleSearch extends Component{
@@ -58,6 +59,7 @@ class ArticleSearch extends Component{
                 <div id="articleResults">
                     {this.cycleWords()}
                 </div>
+                <Footer />
             </div>
         )
     }

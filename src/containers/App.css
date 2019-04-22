@@ -4,6 +4,33 @@
   overflow: hidden;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 450px auto;
+  width: 100vw;
+  height: 70px;
+  z-index: 2;
+}
+
+#headerTitle {
+  width: 440px;
+}
+
+#headerTitle h1{
+  font-size: 1.7em;
+  height: 60%;
+  margin: 0px;
+  padding: 10px 0px 0px 50px;
+  line-height: 100%;
+}
+
+#headerTitle h2{
+  font-size: 1em;
+  height: 40%;
+  margin: 0px 0px 0px 100px;
+  padding: 0px;
+}
+
 button {
   outline: none;
 }
@@ -28,33 +55,11 @@ button {
   grid-template-rows: 70px auto;
 }
 
-nav{
-  grid-row: 1;
-  display: inline-block;
-  text-align: center;
-  background-color: black;
-}
-
 main{
   overflow-y: auto;
   grid-row: 2;
   background: rgb(30,30,30);
-}
-
-header {
-  grid-row: 1;
-  background-color:  rgb(30,30,30);
-  display: grid;
-  grid-template-columns: calc(100vw - 300px) 300px;
-  top: -70px;
-  width: 100vw;
-  position: absolute;
-  transition: top 250ms ease-in;
-}
-
-.showHeader {
-  top:0px;
-  /* position: static; */
+  z-index: 1;
 }
 
 /* Custom Style Classes */
@@ -67,48 +72,7 @@ header {
   border-top: none;
 }
 
-.hide{
-  display: none;
-}
-
-.navButton {
-  display: block;
-  width: 147px;
-  height: 100%;
-  font-size: 14px;
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-weight: bold;
-  border-left: 1px solid silver;
-}
-
-.leftButton {
-  border: none;
-}
-
-.navMenu {
-  position: static;
-  background-color: black;
-  border-radius: 15px;
-  color: silver;
-  width: 296px;
-  height: 64px;
-  border: 1px solid silver;
-  margin: 3px;
-  z-index: 100;
-}
-
-.navOpen {
-  display: none;
-}
-
-.myName {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-}
-
-@media screen and (max-width: 560px){
+@media screen and (max-width: 590px){
   .columns2{
     grid-template-rows: auto auto;
     grid-template-columns: auto;
@@ -123,55 +87,27 @@ header {
     grid-row: 2;
   }
 
-  .navMenu{
-    opacity: 0;
-    position: fixed;
-    top: 64px;
-    right: 0px;
-    background-color: black;
-    border-radius: 15px;
-    color: silver;
-    width: 128px;
-    height: 0px;
-    border: 1px solid silver;
-    margin: 3px;
-    transition: height 0.5s ease-in-out;
+  #headerTitle {
+    width: 100%;
   }
-
-  .navOpen {
-    display: block;
-    width: 64px;
-    height: 64px;
-    font-size: 25px;
-    border-radius: 15px;
-    margin: 3px;
-    position: relative;
-    background-color: black;
-    color: silver;
+  
+  #headerTitle h1{
+    height: auto;
+    font-size: 1em;
+    margin: 0px;
+    padding-left: 2vw;
+    line-height: 100%;
+    margin-top: 2vw;
   }
-
-  .navButton {
-    opacity: 0;
-    height: 64px;
-    width: 128px;
-    border: 1px solid silver;
-  }
-
-  .leftButton {
-    border: none;
-  }
-
-  .navMenuOpen{
-    height: 128px;
-    opacity: 1;
-  }
-
-  .fade-in {
-    transition: opacity 0.3s ease-in-out 0.18s ;
-    opacity: 1;
+  
+  #headerTitle h2{
+    height: auto;
+    font-size: .8em;
+    padding-left: 2vw;
+    margin: 0px;
   }
 
   header {
-    grid-template-columns: auto 76px;
+    grid-template-columns: auto 150px;
   }
 }

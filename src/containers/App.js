@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AboutMe from '../components/AboutMe';
 import ArticleSearch from './ArticleSearch';
+import NavMenu from './NavMenu';
 import './App.css';
 import 'tachyons';
 
@@ -8,11 +9,12 @@ class App extends Component {
   constructor(){
     super();
     this.address = './profile/index.html';
-    this.state = {currentObj:"", menuStatus:"", childView:<AboutMe/>}
+    this.state = {currentObj:""}
     this.timer = setInterval(() => {
       this.timeToLoad();
     }, 200);;
     this.time = "";
+    this.menuNavigation = this.menuNavigation.bind(this);
   }
   timeToLoad(){
     if((document.readyState === 'complete')&&(this.state.currentObj === "")){
@@ -27,44 +29,27 @@ class App extends Component {
       }
     }
   }
-  navButtonClick = (event) => {
-    let menu = document.getElementById('navMenu');
-    let menuButton = Array.from(document.getElementsByClassName('navButton'));
-    let stat = "";
-    if(this.state.menuStatus === "closed"){
-      menu.classList.add("navMenuOpen");
-      menuButton.forEach(btn=>btn.classList.add("fade-in"))
-      stat = "open"
-    } else {
-      menu.classList.remove("navMenuOpen");
-      menuButton.forEach(btn=>btn.classList.remove("fade-in"))
-      stat = "closed"
-    }
-    this.setState({menuStatus:stat})
-  }
-  buttonClick = (event) => {
-    if(this.state.menuStatus === "closed")return true;
-    if(event.target.innerText === "Projects"){
-      this.setState({currentObj:<ArticleSearch/>});
-    } else {
-      this.setState({currentObj:<AboutMe/>});
+  menuNavigation = (text) => {
+    switch(text){
+      case "Projects":
+        this.setState({currentObj:<ArticleSearch/>});
+        break;
+      case "About Me":
+        this.setState({currentObj:<AboutMe/>});
+        break;
+      default:
+        window.open('mailto:mrlesbomar@gmail.com');
     }
   }
   render() {
     return (
       <div className="App">
         <header className="white tl pa-2 shadow-3">
-          <div className="ma3 fade-in">
-            <h2 className="pa0 ma0 myName">Mr Leslie Bomar</h2>
-            <h6 className="pa0 pl4 ma0">Full Stack Web Application Developer</h6>
+          <div id="headerTitle">
+            <h1>Leslie C. Bomar</h1>
+            <h2>Full Stack Web Application Developer</h2>
           </div>
-          <div>
-            <button className="navOpen fr" onClick={this.navButtonClick}>&#9776;</button>
-            <div id="navMenu" className="navMenu">
-                <button className="navButton fr" onClick={this.buttonClick}>About Me</button>
-                <button className="navButton leftButton fr" onClick={this.buttonClick}>Projects</button>
-            </div>
-          </div>
+          <NavMenu buttonClick={this.menuNavigation}/>
         </header>
         <main>
           {this.state.currentObj}

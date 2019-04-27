@@ -4,15 +4,15 @@ import './NavMenu.css';
 class NavMenu extends Component {
     constructor(){
         super();
-        this.state = {menuStatus:"navClosed"};
+        this.state = {menuStatus:true};
         this.activateMenu = this.activateMenu.bind(this);
         this.buttonClick = this.buttonClick.bind(this);
     }
     activateMenu = () => {
-        if(this.state.menuStatus === "navClosed"){
-            this.setState({menuStatus:"navOpen"})
+        if(this.state.menuStatus === true){
+            this.setState({menuStatus:false})
         } else {
-            this.setState({menuStatus:"navClosed"})
+            this.setState({menuStatus:true})
         }
     }
     buttonClick = (event) => {

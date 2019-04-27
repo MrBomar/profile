@@ -4,12 +4,22 @@
   overflow: hidden;
 }
 
-header {
+.header {
   display: grid;
   grid-template-columns: 450px auto;
   width: 100vw;
   height: 70px;
   z-index: 2;
+  transform: translateY(-70px);
+  transition: transform 0.5s ease-in;
+}
+
+.header-entered {
+  transform: translateY(0px)
+}
+
+.header-entering {
+  transform: translateY(-70px)
 }
 
 #headerTitle {

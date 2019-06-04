@@ -1,10 +1,10 @@
 import React from 'react';
 import './AboutMe.css';
-import Footer from './Footer';
+import Footer from '../Footer/Footer';
 
-const AboutMe = props => {
+const AboutMe = (props) => {
     return (
-        <div id="aboutMe">
+        <main id="aboutMe" onClick={props.closeNavMenu}>
             <h1 id="aboutMeHeader">ABOUT ME</h1>
             <div className="columns2">
                 <div className="col1">
@@ -72,7 +72,7 @@ const AboutMe = props => {
                 </div>
             </div>
             <Footer />
-        </div>
+        </main>
     )
 }
 

@@ -1,0 +1,15 @@
+.navButton {
+    border: none;
+    background-color: black;
+    font-weight: bold;
+    height: 70px;
+    width: 150px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    float: right;
+}
+
+.navButton:hover {
+    background-color: darkslategrey;
+}

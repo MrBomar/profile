@@ -1,31 +1,5 @@
 let articles = [
     {
-        articleID:"article1",
-        title:"Tic Tac Toe",
-        description:"A simple tic tac toe game. Play against the computer to see which is smarter.",
-        keywords:"html css javascript game tic tac toe dom game application responsive",
-        author:"Leslie C. Bomar",
-        publishedDate:"2018",
-        type:"project",
-        image:"https://mrlesbomar.com/projects/screenshots/tic-tac-toe.jpg",
-        links:[
-            {
-                linkID:1,
-                link:"https://mrlesbomar.com/games/tic-tac-toe.html",
-                alt:"play my tic tac toe game",
-                image:"/images/website-icon.png",
-                message:"Play the game!"
-            },
-            {
-                linkID:2,
-                link:"https://github.com/MrBomar/tic-tac-toe",
-                alt:"tic tac toe github repository",
-                image:"/images/github-icon.png",
-                message:"See the code!"
-            }
-        ]
-    },
-    {
         articleID:"article2",
         title:"Solitaire",
         description:"A Vanilla.JS card game degined and built without any frameworks or images.",
@@ -52,10 +26,36 @@ let articles = [
         ]
     },
     {
+        articleID:"article1",
+        title:"Tic Tac Toe",
+        description:"A simple tic tac toe game. Play against the computer to see which is smarter.",
+        keywords:"html css javascript tic tac toe dom game application responsive",
+        author:"Leslie C. Bomar",
+        publishedDate:"2018",
+        type:"project",
+        image:"https://mrlesbomar.com/projects/screenshots/tic-tac-toe.jpg",
+        links:[
+            {
+                linkID:1,
+                link:"https://mrlesbomar.com/games/tic-tac-toe.html",
+                alt:"play my tic tac toe game",
+                image:"/images/website-icon.png",
+                message:"Play the game!"
+            },
+            {
+                linkID:2,
+                link:"https://github.com/MrBomar/tic-tac-toe",
+                alt:"tic tac toe github repository",
+                image:"/images/github-icon.png",
+                message:"See the code!"
+            }
+        ]
+    },
+    {
         articleID:"article3",
         title:"Personal Website",
         description:"Designed and built using React.js, tachyons, and CSS Transitions.",
-        keywords:"react css transitions profile personal portfolio json javascript html css tachyons ajax pdo mariahdb php sql html5 api cgi restful responsive css-bundler",
+        keywords:"react transitions profile personal portfolio json javascript html css tachyons ajax pdo mariahdb php sql html5 api cgi restful responsive css-bundler",
         author:"Leslie C. Bomar",
         publishedDate:"04/13/2019",
         type:"project",

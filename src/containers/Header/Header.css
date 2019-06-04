@@ -1,0 +1,32 @@
+#myTitle {
+    display: inline-block;
+    text-align: left;
+    color: white;
+}
+
+#myTitle h1 {
+    font-size: 1.7em;
+    height: 60%;
+    margin: 0px;
+    padding: 10px 0px 0px 50px;
+    line-height: 100%;
+}
+  
+#myTitle h2{
+    font-size: 1em;
+    height: 40%;
+    margin: 0px 0px 0px 100px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    #myTitle h1 {
+        font-size: 1.2em;
+        padding: 10px 0px 0px 10px;
+    }
+
+    #myTitle h2 {
+        font-size: .7em;
+        margin: 0px 0px 0px 25px;
+    }
+}

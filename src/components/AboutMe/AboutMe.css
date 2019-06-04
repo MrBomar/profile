@@ -1,5 +1,7 @@
 #aboutMe {
     background-color: white;
+    z-index: 1;
+    overflow-y: scroll;
 }
 
 #aboutMeHeader {
@@ -39,4 +41,19 @@ table {
     text-align: right;
     margin: 0px 50px 50px 0px;
 }
+
+@media screen and (max-width: 590px){
+    .columns2{
+      grid-template-rows: auto auto;
+      grid-template-columns: auto;
+    }
   
+    .col1{
+      grid-row: 1;
+      border: none;
+    }
+  
+    .col2{
+      grid-row: 2;
+    }
+}

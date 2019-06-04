@@ -1,4 +1,8 @@
-#articleResults{
+#articleSearch {
+    overflow-y: scroll;
+}
+
+#articleResults {
     text-align: center;
     background-color: lightblue;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import LinkButton from './LinkButton';
+import LinkButton from '../LinkButton/LinkButton';
 import './Footer.css';
 
 const Footer = props => {

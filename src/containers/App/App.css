@@ -1,0 +1,51 @@
+/* Landscape Layout */
+*{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+button {
+  outline: none;
+}
+
+#App {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(30,30,30);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 70px auto;
+}
+
+header {
+  grid-row: 1;
+  z-index: 2;
+  height: 70px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: auto 450px;;
+}
+
+main {
+  grid-row: 2;
+  z-index: 1;
+  height: calc(100vh - 70px);
+}
+
+/* Custom Style Classes */
+
+.bg-cust-gold{
+  background-color: #D9E254;
+}
+
+.remove-top-border{
+  border-top: none;
+}
+
+@media screen and (max-width: 900px){
+  header {
+    grid-template-columns: auto 150px;
+  }
+}

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import LinkButton from './LinkButton';
-import KeywordButton from './KeywordButton';
+import LinkButton from '../LinkButton/LinkButton';
+import KeywordButton from '../KeywordButton/KeywordButton';
 import './ArticleCard.css';
 
 class ArticleCard extends Component{
@@ -8,19 +8,23 @@ class ArticleCard extends Component{
         super();
         this.keywords = this.keywords.bind(this);
     }
+
     keywords(){
-        return this.props.keywords.split(" ").map(key=>{
+        const {keywords, articleID} = this.props.article;
+        return keywords.split(" ").map(key=>{
             return <KeywordButton
-                        key={this.props.articleID+'key'+key}
+                        key={articleID+'key'+key}
                         keywordClick={this.props.keywordClick}
                         word={key}
                     />
         })
     }
+
     renderLinks(){
-        return this.props.links.map(myLink=>{
+        const {links, articleID} = this.props.article;
+        return links.map(myLink=>{
             return <LinkButton
-                        key={this.props.articleID+'link'+myLink.linkID}
+                        key={articleID+'link'+myLink.linkID}
                         link={myLink.link}
                         alt={myLink.alt}
                         image={myLink.image}
@@ -28,12 +32,14 @@ class ArticleCard extends Component{
                     />
         })
     }
+
     render(){
+        const {key, image, title, description} = this.props.article;
         return(
-            <div className="articleCard">
-                <img src={this.props.image} alt={this.props.title}></img>
-                <h2>{this.props.title}</h2>
-                <p>{this.props.description}</p>
+            <div key={key} className="articleCard">
+                <img src={image} alt={title}></img>
+                <h2>{title}</h2>
+                <p>{description}</p>
                 {this.renderLinks()}
                 <p className="f6">Keywords:<br/>{this.keywords()}</p>
             </div>

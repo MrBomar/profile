@@ -25,7 +25,7 @@ header {
   height: 70px;
   width: 100vw;
   display: grid;
-  grid-template-columns: auto 450px;;
+  grid-template-columns: auto 600px;
 }
 
 main {
@@ -44,8 +44,26 @@ main {
   border-top: none;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1050px){
   header {
     grid-template-columns: auto 150px;
   }
+}
+
+.fade-enter {
+  opacity: 0
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
 }

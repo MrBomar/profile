@@ -1,5 +1,5 @@
 import React from 'react';
-import NavButton from '../../components/NavButton/NavButton';
+import NavButton from '../NavButton/NavButton';
 import './NavDropMenu.css';
 
 export default function NavDropMenu(props) {
@@ -8,9 +8,7 @@ export default function NavDropMenu(props) {
             <nav>
                 <NavButton buttonId='hamburgerButton' buttonClick={props.navButtonClick} buttonText='&#9776;'/>
                 <div id="navDropMenu" className="navDropMenu">
-                    <NavButton buttonId='projectsButton' buttonClick={props.navButtonClick} buttonText="Projects"/>
-                    <NavButton buttonId='aboutMeButton' buttonClick={props.navButtonClick} buttonText="About Me"/>
-                    <NavButton buttonId='contactMeButton' buttonClick={props.navButtonClick} buttonText='Contact Me'/>
+                    {props.renderButtons()}
                 </div>
             </nav>
         )

@@ -1,3 +1,8 @@
 footer {
-    margin: 50px;
+    margin: 25px;
+    background-color: white;
+}
+
+footer img {
+    margin: 25px;
 }

@@ -62,13 +62,6 @@ let articles = [
         image:"https://mrlesbomar.com/projects/screenshots/personal-website2.png",
         links:[
             {
-                linkID:1,
-                link:"https://mrlesbomar.com/",
-                alt:"my personal portfolio",
-                image:"/images/website-icon.png",
-                message:"Visit my Website"
-            },
-            {
                 linkID:2,
                 link:"https://github.com/MrBomar/profile",
                 alt:"personal website github repository",
@@ -89,7 +82,7 @@ let articles = [
         links:[
             {
                 linkID:1,
-                link:"https://mrlesbomar.com/",
+                link:"https://mrlesbomar.com/profile/index.html",
                 alt:"my vscode animation",
                 image:"/images/website-icon.png",
                 message:"See the animation!"
@@ -111,7 +104,7 @@ let articles = [
         author:"Leslie C. Bomar",
         publishedDate:"2018",
         type:"project",
-        image:"http://www.staticwhich.co.uk/static/images/products/no-image/no-image-available.png",
+        image:"./images/Microsoft_Access_2013_logo.svg",
         publishedLocation:"none",
         repository:"https://github.com/MrBomar/access-code-snippets",
         links:[

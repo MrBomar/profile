@@ -4,10 +4,22 @@
 
 #articleResults {
     text-align: center;
-    background-color: lightblue;
+    background-color: white;
+}
+
+#searchDiv * {
+    margin: 10px;
+    width: auto;
+    display: inline-flex;
 }
 
 #searchDiv {
+    width: 100%;
+    margin: 0px;
     background-color: gainsboro;
     border:1px solid black;
+}
+
+#filters {
+    background-color: white;
 }

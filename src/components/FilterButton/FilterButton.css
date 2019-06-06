@@ -1,0 +1,16 @@
+.filterButton {
+    background-color: lightgray;
+    border-radius: 5px;
+    font-size: .8em;
+    border: none;
+    display: inline-flex;
+    padding: 4px;
+    margin: 2px 2px 0px 2px;
+    vertical-align: middle;
+    user-select: none;
+}
+
+.filterButton span {
+    margin-left: 4px;
+    cursor: pointer;
+}

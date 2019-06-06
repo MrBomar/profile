@@ -2,25 +2,60 @@ import React, {Component} from 'react';
 import ArticleCard from '../../components/ArticleCard/ArticleCard'
 import articleData from '../../data/articleData';
 import Footer from '../../components/Footer/Footer';
+import FilterButton from '../../components/FilterButton/FilterButton';
 import './ArticleSearch.css';
+
+//Comment
 
 class ArticleSearch extends Component{
     constructor(){
         super();
-        this.state = {search:[]}
+        this.state = {
+            search: [],
+            keywords: [],
+            userEntry: ''
+        }
         this.cycleWords = this.cycleWords.bind(this);
         this.keywordClick = this.keywordClick.bind(this);
+        this.renderKeywordButtons = this.renderKeywordButtons.bind(this);
     }
 
     keywordClick = (event) =>{
-        this.setState({search:event.target.value.toLowerCase().trim().split(" ")});
+        let newValue = event.target.innerText;
+        let testValue = this.state.keywords.find(item =>{
+            return item === newValue;
+        })
+
+        //Used below
+        let returnValue = (testValue)?
+            this.state.keywords.filter(word => word !== newValue):
+            this.state.keywords.concat([newValue]);
+        
+        //Update State
+        this.setState({
+            keywords: returnValue,
+            search: this.state.userEntry.toLowerCase().trim().split(" ").concat(returnValue)
+        })
+    }
+
+    renderKeywordButtons() {
+        return this.state.keywords.map(keyword=>{
+            return <FilterButton
+                        key={`filterButton${keyword}`} 
+                        keyword={keyword}
+                        removeKeyword={this.keywordClick}
+                    />;
+        })
     }
 
     onSearchType = (event) => {
         if(event.target.value === ""){
             this.setState({search:[]});
         } else {
-            this.setState({search:event.target.value.toLowerCase().trim().split(" ")});
+            this.setState({
+                userEntry: event.target.value,
+                search: event.target.value.toLowerCase().trim().split(" ").concat(this.state.keywords)
+            });
         }
     }
 
@@ -55,7 +90,17 @@ class ArticleSearch extends Component{
         return(
             <main id="articleSearch" onClick={this.props.closeNavMenu}>
                 <div id="searchDiv">
-                    <input id="searchbox" onChange={this.onSearchType} className="ma2" type="input" name="searchBox" placeholder="...search my projects"></input>
+                    <h5>Enter a keyword to filter my projects</h5>
+                    <input id="searchbox" 
+                        onChange={this.onSearchType}
+                        className="ma2"
+                        type="input"
+                        name="searchBox"
+                        placeholder="...search my projects"
+                    ></input>
+                </div>
+                <div id='filters'>
+                    {this.renderKeywordButtons()}
                 </div>
                 <div id="articleResults">
                     {this.cycleWords()}

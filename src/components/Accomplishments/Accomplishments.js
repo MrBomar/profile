@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Footer from '../Footer/Footer';
 import './Accomplishments.css';
 
 export default class Accomplishments extends Component {
@@ -55,17 +56,21 @@ export default class Accomplishments extends Component {
                 </table>
                 <div id='certifications'>
                     <h1>Certifications</h1>
-                    <a href='https://www.youracclaim.com/badges/6fa32043-c5d5-48b8-9820-d7b2ab3b9e84/public_url'>
-                        <img src='./images/MTA+Software+Development+Fundamentals_109x109.png' height='200' width='200' alt='MTA Software Development Fundamentals Badge'/>
-                    </a>
-                    <a href='https://www.youracclaim.com/badges/9ab39f2c-fd80-4de7-a280-a4ebe2fe0f1b/public_url'>
+                    <br/>
+                    <a href='https://www.youracclaim.com/badges/9ab39f2c-fd80-4de7-a280-a4ebe2fe0f1b/public_url' rel='noopener noreferrer' target='_blank'>
                         <img src='./images/CompTIA_A_108x108.png' height='200' width='200' alt='CompTIA A+ Badge'/>
                     </a>
-                    <a href='https://www.youracclaim.com/badges/ac331fae-318d-4bca-a074-0925b04ad2af/public_url'>
+                    <a href="./documents/CIW_Site_Devlopment_Associate.pdf" rel='noopener noreferrer' target='_blank'>
+                        <img src='./images/CIW_Site_Development_Associate.png' alt='CIW Site Development Associate Badge'/>
+                    </a>
+                    <a href='https://www.youracclaim.com/badges/6fa32043-c5d5-48b8-9820-d7b2ab3b9e84/public_url' rel='noopener noreferrer' target='_blank'>
+                        <img src='./images/MTA+Software+Development+Fundamentals_109x109.png' height='200' width='200' alt='MTA Software Development Fundamentals Badge'/>
+                    </a>
+                    <a href='https://www.youracclaim.com/badges/ac331fae-318d-4bca-a074-0925b04ad2af/public_url' rel='noopener noreferrer' target='_blank'>
                         <img src='./images/MSAccess_109x109.png' height='200' width='200' alt='Microsoft Access Specialist Badge'/>
                     </a>
                 </div>
-
+                <Footer/>
             </div>
         )       
     }

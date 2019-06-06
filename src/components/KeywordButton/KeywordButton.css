@@ -1,5 +1,11 @@
 .keywordButton {
-    border: 1px solid navy;
-    background-color: aqua;
     width: auto;
+    font-size: .8em;
+    background-color: white;
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
 }

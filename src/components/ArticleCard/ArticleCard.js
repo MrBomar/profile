@@ -38,10 +38,11 @@ class ArticleCard extends Component{
         return(
             <div key={key} className="articleCard">
                 <img src={image} alt={title}></img>
-                <h2>{title}</h2>
+                <h3>{title}</h3>
                 <p>{description}</p>
                 {this.renderLinks()}
-                <p className="f6">Keywords:<br/>{this.keywords()}</p>
+                <h6 className="f6">Keywords:</h6>
+                <div>{this.keywords()}</div>
             </div>
         )
     }

@@ -11,7 +11,7 @@ class LinkButton extends Component{
     }
     render(){
         return(
-            <button type="button" onClick={this.clickLink} className="linkButton" href={this.props.link} alt={this.props.alt}>
+            <button type="button" onClick={this.clickLink} className="linkButton" href={this.props.link} alt={this.props.alt} target="_blank">
                 <img src={this.props.image} alt={this.props.alt}/>
                 <h5>{this.props.message}</h5>
             </button>

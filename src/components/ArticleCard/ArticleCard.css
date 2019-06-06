@@ -8,7 +8,18 @@
     display: inline-block;
 }
 
-.articleCard p{
-    margin:20px;
+.articleCard p {
+    margin: 15px 20px;
+    text-align: left;
+    font-size: .9em;
+}
+
+.articleCard h6 {
+    text-align: left;
+    margin: 10px 0px 0px 20px;
+}
+
+.articleCard div {
+    margin: 15px;
     text-align: left;
 }

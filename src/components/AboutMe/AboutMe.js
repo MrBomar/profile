@@ -22,9 +22,12 @@ const AboutMe = (props) => {
                         This website is the result. It contains my current projects that I have developed since switching to Javascript and React. These are still a work in progress, but it's a reflection of where I am today.</p>
                     <p>Please browse the projects, play the games, and let me know what you think.
                     </p>
-                    <h3 className="mySignature">
-                        Thank You.
+                    <h3 id='closing'>
+                        Thank You,
                     </h3>
+                    <h2 id='mySignature'>
+                        Leslie C. Bomar III
+                    </h2>
                 </div>
             <Footer />
         </main>

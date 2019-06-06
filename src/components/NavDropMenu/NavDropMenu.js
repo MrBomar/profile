@@ -6,7 +6,7 @@ export default function NavDropMenu(props) {
     if(props.navMenuClosed === false){
         return (
             <nav>
-                <NavButton buttonId='hamburgerButton' buttonClick={props.navButtonClick} buttonText='&#9776;'/>
+                <NavButton key='hamburgerButton' buttonClick={props.navButtonClick} buttonText='&#9776;'/>
                 <div id="navDropMenu" className="navDropMenu">
                     {props.renderButtons()}
                 </div>
@@ -15,7 +15,7 @@ export default function NavDropMenu(props) {
     } else {
         return (
             <nav>
-                <NavButton buttonId='hamburgerButton' buttonClick={props.navButtonClick} buttonText='&#9776;'/>
+                <NavButton key='hamburgerButton' buttonClick={props.navButtonClick} buttonText='&#9776;'/>
             </nav>
         )
     }

@@ -30,6 +30,7 @@ export default class Header extends Component {
     renderButtons = () => {
         return this.buttons.map(btn => {
             return <NavButton
+                        key={btn.buttonId}
                         buttonId={btn.buttonId}
                         buttonClick={this.props.navButtonClick}
                         buttonText={btn.buttonText}

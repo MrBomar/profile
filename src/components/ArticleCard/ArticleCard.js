@@ -40,9 +40,9 @@ class ArticleCard extends Component{
                 <img src={image} alt={title}></img>
                 <h3>{title}</h3>
                 <p>{description}</p>
-                {this.renderLinks()}
+                <div className='articleLinks'>{this.renderLinks()}</div>
                 <h6 className="f6">Keywords:</h6>
-                <div>{this.keywords()}</div>
+                <div className='articleKeywords'>{this.keywords()}</div>
             </div>
         )
     }

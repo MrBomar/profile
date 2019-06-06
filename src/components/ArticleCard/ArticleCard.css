@@ -19,7 +19,11 @@
     margin: 10px 0px 0px 20px;
 }
 
-.articleCard div {
+.articleKeywords {
     margin: 15px;
     text-align: left;
+}
+
+.articleLinks {
+    margin: 15px;
 }

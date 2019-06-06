@@ -2,8 +2,8 @@ let articles = [
     {
         articleID:"article2",
         title:"Solitaire",
-        description:"A Vanilla.JS card game degined and built without any frameworks or images.",
-        keywords:"vanilla javascript solitaire css html5 html dom promises xmlhttprequest ajax php sql pdo mariahdb object oriented class recursive api cgi restful application game responsive webpack css-bundler",
+        description:"On object oriented, free, web-based solitaire game.",
+        keywords:"vanilla javascript solitaire css html5 html ajax php sql pdo mariahdb object oriented class api cgi restful application game responsive webpack css-bundler",
         author:"Leslie C. Bomar",
         publishedDate:"04/11/2019",
         type:"project",
@@ -26,9 +26,28 @@ let articles = [
         ]
     },
     {
+        articleID:"article3",
+        title:"Personal Website",
+        description:"Built using React.js.",
+        keywords:"react profile personal portfolio json javascript html css ajax pdo mariahdb php sql html5 api cgi restful responsive css-bundler",
+        author:"Leslie C. Bomar",
+        publishedDate:"04/13/2019",
+        type:"project",
+        image:"https://mrlesbomar.com/projects/screenshots/personal-website2.png",
+        links:[
+            {
+                linkID:2,
+                link:"https://github.com/MrBomar/profile",
+                alt:"personal website github repository",
+                image:"/images/github-icon.png",
+                message:"See the code!"
+            }
+        ]
+    },
+    {
         articleID:"article1",
         title:"Tic Tac Toe",
-        description:"A simple tic tac toe game. Play against the computer to see which is smarter.",
+        description:"A free web-based Tic-Tac-Toe game. User plays against the computer.",
         keywords:"html css javascript tic tac toe dom game application responsive",
         author:"Leslie C. Bomar",
         publishedDate:"2018",
@@ -52,29 +71,10 @@ let articles = [
         ]
     },
     {
-        articleID:"article3",
-        title:"Personal Website",
-        description:"Designed and built using React.js, tachyons, and CSS Transitions.",
-        keywords:"react transitions profile personal portfolio json javascript html css tachyons ajax pdo mariahdb php sql html5 api cgi restful responsive css-bundler",
-        author:"Leslie C. Bomar",
-        publishedDate:"04/13/2019",
-        type:"project",
-        image:"https://mrlesbomar.com/projects/screenshots/personal-website2.png",
-        links:[
-            {
-                linkID:2,
-                link:"https://github.com/MrBomar/profile",
-                alt:"personal website github repository",
-                image:"/images/github-icon.png",
-                message:"See the code!"
-            }
-        ]
-    },
-    {
         articleID:"article4",
         title:"Code Animation",
-        description:"An animation I put together that types out Javascript code so that it resembles VSCode.",
-        keywords:"animate js javascript recursive splash landing page json css object oriented class",
+        description:"An animation that types out Javascript code so that it resembles VSCode.",
+        keywords:"animate js javascript splash landing page json css object oriented class",
         author:"Leslie C. Bomar",
         publishedDate:"04/11/2019",
         type:"project",
@@ -99,7 +99,7 @@ let articles = [
     {
         articleID:"article5",
         title:"Microsoft Access Code Samples",
-        description:"A collection of the code from an application I wrote for a logistics operation.",
+        description:"A sample of the code I wrote for a logistics application.",
         keywords:"microsoft visual basic for applications outlook access dynamic sql html logistics application api google maps user accounts version control vba",
         author:"Leslie C. Bomar",
         publishedDate:"2018",

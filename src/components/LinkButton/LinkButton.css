@@ -3,21 +3,23 @@
     height: 50px;
     border-radius: 10px;
     border: 1px solid silver;
-    margin: 15px 30px;
+    margin: 4px;
     transition: transform 200ms ease-in-out;
+    background-color: white;
+    display: inline-flex;
 }
 
 .linkButton h5 {
+    align-content: center;
     margin: 0px;
-    display: inline-block;
-    line-height: 100%;
-    margin-bottom: 18px;
+    padding-top:15px;
+    padding-right: 5px;
+    cursor: pointer;
 }
 
 .linkButton img{
     padding: 5px;
     margin: 0px;
-    display: inline;
     height: 48px;
 }
 

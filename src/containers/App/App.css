@@ -34,36 +34,8 @@ main {
   height: calc(100vh - 70px);
 }
 
-/* Custom Style Classes */
-
-.bg-cust-gold{
-  background-color: #D9E254;
-}
-
-.remove-top-border{
-  border-top: none;
-}
-
 @media screen and (max-width: 1050px){
   header {
     grid-template-columns: auto 150px;
   }
-}
-
-.fade-enter {
-  opacity: 0
-}
-
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 300ms;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit-active {
-  opacity: 0;
-  transition: opacity 300ms;
 }

@@ -20,22 +20,37 @@ class ArticleSearch extends Component{
         this.renderKeywordButtons = this.renderKeywordButtons.bind(this);
     }
 
-    keywordClick = (event) =>{
-        let newValue = event.target.innerText;
-        let testValue = this.state.keywords.find(item =>{
-            return item === newValue;
-        })
+    removeKeyword = (event) => {
+        this.setSearch(event.target.innerText, false);
 
-        //Used below
-        let returnValue = (testValue)?
-            this.state.keywords.filter(word => word !== newValue):
-            this.state.keywords.concat([newValue]);
-        
-        //Update State
-        this.setState({
-            keywords: returnValue,
-            search: this.state.userEntry.toLowerCase().trim().split(" ").concat(returnValue)
-        })
+    }
+
+    keywordClick = (event) => {
+        this.setSearch(event.target.innerText, true);
+    }
+
+    setSearch = (myValue, add) => {
+        if(add && this.state.userEntry){
+            this.setState({
+                keywords: this.state.keywords.concat(myValue),
+                search: this.state.userEntry.split(" ").concat(this.state.keywords.concat(myValue))
+            })
+        } else if (add) {
+            this.setState({
+                keywords: this.state.keywords.concat(myValue),
+                search: this.state.keywords.concat(myValue)
+            })
+        } else if (!add && this.state.userEntry){
+            this.setState({
+                keywords: this.state.keywords.filter(i => i !== myValue),
+                search: this.state.userEntry.split(" ").concat(this.state.keywords.filter(i => i !== myValue))
+            })
+        } else {
+            this.setState({
+                keywords: this.state.keywords.filter(i => i !== myValue),
+                search: this.state.keywords.filter(i => i !== myValue)
+            })
+        }
     }
 
     renderKeywordButtons() {
@@ -43,7 +58,7 @@ class ArticleSearch extends Component{
             return <FilterButton
                         key={`filterButton${keyword}`} 
                         keyword={keyword}
-                        removeKeyword={this.keywordClick}
+                        removeKeyword={this.removeKeyword}
                     />;
         })
     }
@@ -60,7 +75,7 @@ class ArticleSearch extends Component{
     }
 
     cycleWords = () => {
-        return this.buildArticles( (this.state.search.length === 0)?articleData:this.filteredArticles() );
+        return this.buildArticles( (this.state.search.length === 0 && this.state.keywords.length === 0)?articleData:this.filteredArticles() );
     }
 
     filteredArticles(){

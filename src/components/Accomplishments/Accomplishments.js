@@ -57,6 +57,9 @@ export default class Accomplishments extends Component {
                 <div id='certifications'>
                     <h1>Certifications</h1>
                     <br/>
+                    <a href='https://www.youracclaim.com/badges/1fa7afbc-ce11-4fca-b83b-f7371b398c0c/public_url' rel='noopener noreferrer' target='_blank'>
+                        <img src='/images/CompTIA_Project_204x204.png' height='200' width='200' alt='CompTIA Project+ Badge'/>
+                    </a>
                     <a href='https://www.youracclaim.com/badges/9ab39f2c-fd80-4de7-a280-a4ebe2fe0f1b/public_url' rel='noopener noreferrer' target='_blank'>
                         <img src='/images/CompTIA_A_108x108.png' height='200' width='200' alt='CompTIA A+ Badge'/>
                     </a>

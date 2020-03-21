@@ -1,5 +1,24 @@
 let articles = [
     {
+        articleID: "article6",
+        title: "Student Roster",
+        description: "C++ project for WGU assignment",
+        keywords: "c++ cli school project",
+        author: "Leslie C. Bomar",
+        publishedDate:"01/18/2020",
+        type: "school project",
+        image: "https://mrlesbomar.com/projects/screenshots/studentroster.png",
+        links: [
+            {
+                linkID: 1,
+                link: "https://github.com/MrBomar/Student-Roster",
+                alt: "simple command line interface project",
+                image: "/images/github-icon.png",
+                message: "See the code!"
+            }
+        ]
+    },
+    {
         articleID: "article5",
         title: "Face Recognition Brain",
         description: "Will recognize faces in photos and draw a frame around the face.",

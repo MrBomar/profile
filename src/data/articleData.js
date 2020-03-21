@@ -1,5 +1,31 @@
 let articles = [
     {
+        articleID: "article5",
+        title: "Face Recognition Brain",
+        description: "Will recognize faces in photos and draw a frame around the face.",
+        keywords: "react css html5 jsx clarifi tachyons api javascript single page application SPA webpack babel",
+        author: "Leslie C. Bomar",
+        publishedDate:"05/19/2019",
+        type: "project",
+        image: "https://mrlesbomar.com/projects/screenshots/facialrecognition.png",
+        links: [
+            {
+                linkID: 1,
+                link: "https://smart-brain-les.herokuapp.com/",
+                alt: "go to face recognition brain",
+                image: "/images/website-icon.png",
+                message: "Give it a try!"
+            },
+            {
+                linkID: 2,
+                link: "https://github.com/MrBomar/FacialRecognition",
+                alt: "face recognition brain github repository",
+                image: "/images/github-icon.png",
+                message: "See the code!"
+            }
+        ]
+    },
+    {
         articleID:"article2",
         title:"Solitaire",
         description:"On object oriented, free, web-based solitaire game.",

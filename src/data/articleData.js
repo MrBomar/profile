@@ -1,5 +1,31 @@
 let articles = [
     {
+        articleID: "article7",
+        title: "Robot Friends",
+        description: "React project utilizing JSONPlaceholder and redux.",
+        keywords: "JSON react redux-thunk redux tachyons javascript",
+        author: "Leslie C. Bomar",
+        publishedDate:"03/01/2019",
+        type: "coding project",
+        image: "https://mrlesbomar.com/projects/screenshots/robotfriends.png",
+        links: [
+            {
+                linkID: 1,
+                link: "https://mrlesbomar.com/robotfriends/index.html",
+                alt: "robot friends",
+                image: "/images/website-icon.png",
+                message: "Give it a try!"
+            },
+            {
+                linkID: 2,
+                link: "https://github.com/MrBomar/RobotFriends",
+                alt: "robot friends git hub",
+                image: "/images/github-icon.png",
+                message: "See the code!"
+            }
+        ]
+    },
+    {
         articleID: "article6",
         title: "Student Roster",
         description: "C++ project for WGU assignment",

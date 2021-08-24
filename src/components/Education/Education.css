@@ -1,0 +1,33 @@
+#education {
+    background-color: white;
+    overflow-y: auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: center;
+}
+
+#education > h1, #education > h2, #education > div > h2, #education > div > h3, #education > div > h4, #education > div > h5 {
+    text-align: left;
+}
+
+#education > div {
+    margin-left: 20px;
+}
+
+#education > div > h3, #education > div > p, #education > div > h4 {
+    margin-left: 40px;
+}
+
+#education > div > table {
+    border-collapse: collapse;
+    margin: 0px auto;
+    margin-left: 80px;
+}
+
+#education > div > table > tr > td {
+    padding: 0px 20px;
+}
+
+#education > div > img, #education > div > a > img {
+    float: right;
+}

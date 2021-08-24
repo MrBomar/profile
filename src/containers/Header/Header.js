@@ -13,8 +13,8 @@ export default class Header extends Component {
                 buttonText: 'About Me'
             },
             {
-                buttonId: 'accomplishmentsButton',
-                buttonText: 'Accomplishments'
+                buttonId: 'educationButton',
+                buttonText: 'Education'
             },
             {
                 buttonId: 'contactMeButton',

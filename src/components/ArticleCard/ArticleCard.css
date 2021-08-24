@@ -1,11 +1,13 @@
 .articleCard {
-    width: 300px;
+    width: 80vw;
     background-color: white;
     margin: 8px;
     vertical-align: top;
     border-radius: 10px;
     border: 1px solid black;
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px auto;
 }
 
 .articleCard p {
@@ -26,4 +28,18 @@
 
 .articleLinks {
     margin: 15px;
+}
+
+.articleData > ul {
+    margin: 0px 0px;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.articleData > ul > li {
+    padding: 5px 0px;
+}
+
+.articleImage {
+    align-self: center;
 }

@@ -7,6 +7,8 @@ class ArticleCard extends Component{
     constructor(){
         super();
         this.keywords = this.keywords.bind(this);
+        this.renderDescription = this.renderDescription.bind(this);
+        this.renderLinks = this.renderLinks.bind(this);
     }
 
     keywords(){
@@ -17,6 +19,12 @@ class ArticleCard extends Component{
                         keywordClick={this.props.keywordClick}
                         word={key}
                     />
+        })
+    }
+
+    renderDescription(description) {
+        return description.map(i => {
+            return (i.object === 'List')? <ul>{this.renderListItems(i.content)}</ul> : <p>{i.content}</p>;
         })
     }
 
@@ -33,16 +41,24 @@ class ArticleCard extends Component{
         })
     }
 
+    renderListItems(list) {
+        return list.map(j => <li>{j}</li>);
+    }
+
     render(){
         const {key, image, title, description} = this.props.article;
         return(
             <div key={key} className="articleCard">
-                <img src={image} alt={title}></img>
-                <h3>{title}</h3>
-                <p>{description}</p>
-                <div className='articleLinks'>{this.renderLinks()}</div>
-                <h6 className="f6">Keywords:</h6>
-                <div className='articleKeywords'>{this.keywords()}</div>
+                <div className='articleData'>
+                    <h3>{title}</h3>
+                    {this.renderDescription(description)}
+                    <div className='articleLinks'>{this.renderLinks()}</div>
+                    <h6 className="f6">Keywords:</h6>
+                    <div className='articleKeywords'>{this.keywords()}</div>
+                </div>
+                <div className='articleImage'>
+                    <img src={image} alt={title}></img>
+                </div>
             </div>
         )
     }

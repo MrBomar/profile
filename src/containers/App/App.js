@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import ArticleSearch from '../ArticleSearch/ArticleSearch';
 import Animation from '../../components/Animation/Animation';
-import Accomplishments from '../../components/Accomplishments/Accomplishments'
+import Education from '../../components/Education/Education'
 import './App.css';
 import 'tachyons';
 import Header from '../Header/Header';
@@ -70,8 +70,8 @@ class App extends Component {
       case "Contact Me":
         window.open('mailto:mrlesbomar@gmail.com');
         break;
-      case "Accomplishments":
-          this.setState({currentObj: <Accomplishments closeNavMenu={this.closeNavMenu}/>});
+      case "Education":
+          this.setState({currentObj: <Education closeNavMenu={this.closeNavMenu}/>});
           break;
       default:;
     }

@@ -36,7 +36,7 @@ let articles = [
         description: [
             {
                 object: 'p',
-                content: "This is a free web based solitare game. The previous version of this game was click based and this was a major negative. So after a few requests I decided to make a drag and drop version. This version is not complete yet, but you are welcome to check out the code and test the game for yourself."
+                content: "This is a free web based solitare game. The previous version of this game was click based and this was a major negative. So, after a few requests I decided to make a drag and drop version. This version is not complete yet, but you are welcome to check out the code and test the game for yourself."
             },
             {
                 object: 'p',
@@ -46,9 +46,9 @@ let articles = [
                 object: 'List',
                 content: [
                     "Ability to change the colors of the board and deck.",
-                    "Ability to upload images which can be used for card backs",
-                    "Points system and user rankings",
-                    "Android, Windows, and iPhone versions"
+                    "Ability to upload images which can be used for card backs.",
+                    "Points system and user rankings.",
+                    "Android, Windows, and iPhone versions."
                 ]
             },
             {
@@ -140,7 +140,7 @@ let articles = [
             },
             {
                 object: 'p',
-                content: "This project was the first project I built utilizing a web based registration and login. The project was build uting React.js, Clarifi, React-particles, webpack, babel, and tachyons. The site is hosted on an express server from Heroku."
+                content: "This was the first project I built utilizing a web based registration and login. The project was build uting React.js, Clarifi, React-particles, webpack, babel, and tachyons. The site is hosted on an express server from Heroku."
             }
         ],
         keywords: "react css html5 jsx clarifi tachyons api javascript single page application SPA webpack babel express",
@@ -171,11 +171,11 @@ let articles = [
         description: [
             {
                 object: 'p',
-                content: "On object oriented, free, web-based solitaire game. This game is clicked based, which means single clicks on the draw pile will draw a card, and double clicks on a card will automatically move it to a matching pile."
+                content: "An object oriented, free, web-based solitaire game. This game is clicked based, which means single clicks on the draw pile will draw a card, and double clicks on a card will automatically move it to a matching pile."
             },
             {
                 object: 'p',
-                content: "This game give the user the option of selecting from a randomized(shuffled) deck, a solvable deck, or replay the previous hand. Additionally it will save the user's progress so the can return to their game later."
+                content: "This game gives the user the option of selecting from a randomized(shuffled) deck, a solvable deck, or replay the previous hand. Additionally, it will save the user's progress so they can return to their game later."
             },
             {
                 object: 'p',
@@ -242,7 +242,7 @@ let articles = [
             },
             {
                 object: 'p',
-                content: "Since building this I found an error in the computer-opponent's logic that needs corrected, also the appearance could be improved. Eventually I will be redesigning this application to support head to head play."
+                content: "Since building this I found an error in the computer-opponent's logic that needs corrected, also the appearance could be improved. Eventually, I will be redesigning this application to support head to head play."
             }
         ],
         keywords:"html css javascript tic tac toe dom game application responsive",
@@ -357,7 +357,7 @@ let articles = [
             },
             {
                 object: 'p',
-                content: "Unfortunately, I am unable to find my copy of the application or any of the screen shots I had saved."
+                content: "Unfortunately, I am unable to find my copy of the application or any of the screenshots I had saved."
             }
         ],
         keywords:"microsoft visual basic for applications outlook access dynamic sql html logistics application api google maps user accounts version control vba",

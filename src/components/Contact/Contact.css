@@ -1,0 +1,7 @@
+#Contact {
+    background-color: white;
+    z-index: 1;
+    overflow-y: auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}

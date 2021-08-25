@@ -121,52 +121,6 @@ export default class Education extends Component {
                 <div><h3>Learning Design Thinking: Lead Change in Your Organization | 01-2016</h3></div>
                 <h2>Udemy</h2>
                 <div><h3>The Complete Web Developer: Zero to Mastery | 2020</h3></div>
-                <h3>XPO Logistics</h3>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td className="bullet">&bull;</td>
-                            <td>Designed and implemented a driver performance monitoring and reporting system that helped to identify unnecessary stops, extended breaks, and deviations from route planning. No tool for assessing route efficiency was in place before this tool, saw a 12% reduction in paid overtime.</td>
-                        </tr>
-                        <tr>
-                            <td className="bullet">&bull;</td>
-                            <td>Designed and implemented a route status reporting tool that incorporated automated HTML email reports.</td>
-                        </tr>
-                        <tr>
-                            <td className="bullet">&bull;</td>
-                            <td>Designed a bar-code solution currently used to track and build customer shipments.</td>
-                        </tr>
-                        <tr>
-                            <td className="bullet">&bull;</td>
-                            <td>Devised a route planning tool that combined historical delivery data with Google Maps routing to provide accurate routing estimates.</td>
-                        </tr>
-                        <tr>
-                            <td className="bullet">&bull;</td>
-                            <td>Implemented an Access client upgrade tool. Provided automated alerts to client users and automated the upgrade process for the users client application.</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3>Valspar Coatings</h3>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td className="bullet">&bull;</td>
-                            <td>Designed and implemented a raw material discrepancy tracking system that reduced shortages by 80%.</td>
-                        </tr>
-                        <tr>
-                            <td className="bullet">&bull;</td>
-                            <td>Designed and implemented a raw material reordering system that reduced time spent assessing plant needs by 90%, and helped to reduce on-hand inventories by 20%.</td>
-                        </tr>
-                        <tr>
-                            <td className="bullet">&bull;</td>
-                            <td>Designed and implemented a raw material staging process that provided status updates, manged staging processed, and printed labels.</td>
-                        </tr>
-                        <tr>
-                            <td className="bullet">&bull;</td>
-                            <td>Designed and implemented a site wide MRO ordering and approval system used for office, maintenance, safety and production materials. Was instrumental in collecting data concerning buying habits and reducing waste.</td>
-                        </tr>
-                    </tbody>
-                </table>
                 <Footer/>
             </div>
         )       

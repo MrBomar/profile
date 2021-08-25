@@ -6,6 +6,7 @@ import Education from '../../components/Education/Education'
 import './App.css';
 import 'tachyons';
 import Header from '../Header/Header';
+import Contact from '../../components/Contact/Contact';
 
 class App extends Component {
   constructor(){
@@ -68,7 +69,7 @@ class App extends Component {
         this.setState({currentObj: <AboutMe closeNavMenu={this.closeNavMenu}/>});
         break;
       case "Contact Me":
-        window.open('mailto:mrlesbomar@gmail.com');
+        this.setState({currentObj: <Contact closeNavMenu={this.closeNavMenu}/>});
         break;
       case "Education":
           this.setState({currentObj: <Education closeNavMenu={this.closeNavMenu}/>});

@@ -4,6 +4,7 @@ import './Footer.css';
 const Footer = props => {
     return (
         <footer>
+            {/* Fix Me - Need to change Acclaim to Credly */}
             <a href ="https://www.youracclaim.com/users/leslie-bomar/badges" alt='Acclaim Profile' rel='noopener noreferrer' target='_blank'>
                 <img src='./images/Acclaim_Icon.png' height='50' width='50' alt="Acclaim Icon"/>
             </a>
@@ -19,6 +20,8 @@ const Footer = props => {
             <a href="mailto:mrlesbomar@gmail.com" rel='noopener noreferrer' target='_blank'>
                 <img src='/images/gmail-icon.png' height='50' width='50' alt='Gmail Icon'/>
             </a>
+            {/* Fix Me - Need to add Instagram */}
+            {/* Fix Me - Need to add Pluralsight */}
             <h6>This website was designed and maintained by Leslie C. Bomar III.</h6>
         </footer>
     )

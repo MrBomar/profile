@@ -16,7 +16,7 @@ let articles = [
         links: [
             {
                 linkID: 1,
-                link: "https://mrlesbomar.com/paradigm-pets/index.html",
+                link: "https://mrlesbomar.com/paradigm-professionals/index.html",
                 alt: "paradigm pet professionals",
                 image: "/images/website-icon.png",
                 message: "Give it a try!"

@@ -13,44 +13,31 @@ export default class Education extends Component {
                     <img alt='WGU Academic Logo' src='/images/WGU_Academic_Logo.png' height='200px' width='200px'/>
                     <h3>Bachelor of Science, Software Development | Currently Enrolled</h3>
                     <p>Starting February of 2018 I have been enrolled full time and have completed 86 of 125 credits. WGU utilized a pass/fail grading system but requires a minimum 3.0 out of 4.0 to pass. Below is a list of courses completed as of 08/24/2021.</p>
-                    <table>
-                        <tr>
-                            <td>Survey of United States Constitution and Government</td><td>Critical Thinking and Logic</td>
-                        </tr>
-                        <tr>
-                            <td>Introduction to IT</td><td>Introduction to Communication</td>
-                        </tr>
-                        <tr>
-                            <td>Network and Security - Foundations</td><td>Introduction to Humanities</td>
-                        </tr>
-                        <tr>
-                            <td>Web Development Foundations</td><td>Integrated Physical Sciences</td>
-                        </tr>
-                        <tr>
-                            <td>IT Foundations</td><td>IT Applications</td>
-                        </tr>
-                        <tr>
-                            <td>Introduction to Geography</td><td>Natural Science Lab</td>
-                        </tr>
-                        <tr>
-                            <td>College Algebra</td><td>Business of IT - Project Management</td>
-                        </tr>
-                        <tr>
-                            <td>Scripting and Programming - Applications</td><td>Introduction to Probability and Statistics</td>
-                        </tr>
-                        <tr>
-                            <td>Technical Communications</td><td>Web Development Applications</td>
-                        </tr>
-                        <tr>
-                            <td>Data Management - Foundations</td><td> Data Management - Applications</td>
-                        </tr>
-                        <tr>
-                            <td>Organizational Behaviour and Leadership</td><td>Business of IT - Applications</td>
-                        </tr>
-                        <tr>
-                            <td>User Interface Design</td><td></td>
-                        </tr>
-                    </table>
+                    <div class='flexTable col2'>
+                        <div class='flexTableCell'>Survey of United States Constitution and Government</div>
+                        <div class='flexTableCell'>Critical Thinking and Logic</div>
+                        <div class='flexTableCell'>Introduction to IT</div>
+                        <div class='flexTableCell'>Introduction to Communication</div>
+                        <div class='flexTableCell'>Network and Security - Foundations</div>
+                        <div class='flexTableCell'>Introduction to Humanities</div>
+                        <div class='flexTableCell'>Web Development Foundations</div>
+                        <div class='flexTableCell'>Integrated Physical Sciences</div>
+                        <div class='flexTableCell'>IT Foundations</div>
+                        <div class='flexTableCell'>IT Applications</div>
+                        <div class='flexTableCell'>Introduction to Geography</div>
+                        <div class='flexTableCell'>Natural Science Lab</div>
+                        <div class='flexTableCell'>College Algebra</div>
+                        <div class='flexTableCell'>Business of IT - Project Management</div>
+                        <div class='flexTableCell'>Scripting and Programming - Applications</div>
+                        <div class='flexTableCell'>Introduction to Probability and Statistics</div>
+                        <div class='flexTableCell'>Technical Communications</div>
+                        <div class='flexTableCell'>Web Development Applications</div>
+                        <div class='flexTableCell'>Data Management - Foundations</div>
+                        <div class='flexTableCell'>Data Management - Applications</div>
+                        <div class='flexTableCell'>Organizational Behaviour and Leadership</div>
+                        <div class='flexTableCell'>Business of IT - Applications</div>
+                        <div class='flexTableCell'>User Interface Design</div>
+                    </div>
                 </div>
                 <h1>Certifications</h1>
                 <h2>CompTIA</h2>
@@ -69,15 +56,15 @@ export default class Education extends Component {
                     <h3>A+ | Completed 05/28/2019</h3>
                     <h4>Description:</h4>
                     <p>The CompTIA A+ certification requires practitioner to demonstrate the following:</p>
-                    <table>
-                        <tr><td>Demonstrate baseline security skills for IT support professionals.</td></tr>
-                        <tr><td>Configure device operating systems, including Windows, Mac, Linux, Chrome OS, Android and iOS </td></tr>
-                        <tr><td>Administer client-based as well as cloud-based (SaaS) software.</td></tr>
-                        <tr><td>Troubleshoot and problem solve core service and support challenges while applying best practices for documentation, change management, and scripting.</td></tr>
-                        <tr><td>Support basic IT infrastructure and networking</td></tr>
-                        <tr><td>Configure and support PC, mobile and IoT device hardware</td></tr>
-                        <tr><td>Implement basic data backup and recovery methods and apply data storage and management best practices</td></tr>
-                    </table>
+                    <div class='flexTable col1'>
+                        <div class='flexTableCell'>Demonstrate baseline security skills for IT support professionals.</div>
+                        <div class='flexTableCell'>Configure device operating systems, including Windows, Mac, Linux, Chrome OS, Android and iOS.</div>
+                        <div class='flexTableCell'>Administer client-based as well as cloud-based (SaaS) software.</div>
+                        <div class='flexTableCell'>Troubleshoot and problem solve core service and support challenges while applying best practices for documentation, change management, and scripting.</div>
+                        <div class='flexTableCell'>Support basic IT infrastructure and networking.</div>
+                        <div class='flexTableCell'>Configure and support PC, mobile and IoT device hardware.</div>
+                        <div class='flexTableCell'>Implement basic data backup and recovery methods and apply data storage and management best practices.</div>
+                    </div>
                 </div>
                 <h2>Microsoft</h2>
                 <div>

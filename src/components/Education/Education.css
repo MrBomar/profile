@@ -18,16 +18,73 @@
     margin-left: 40px;
 }
 
-#education > div > table {
-    border-collapse: collapse;
-    margin: 0px auto;
-    margin-left: 80px;
-}
-
-#education > div > table > tr > td {
-    padding: 0px 20px;
-}
-
 #education > div > img, #education > div > a > img {
     float: right;
+    height: 200px;
+    width: 200px;
+}
+
+.flexTable {
+    display: grid;
+    padding-left: 80px;
+}
+
+.flexTable.col2 {
+    grid-template-columns: auto auto;
+}
+
+.flexTableCell {
+    text-align: left;
+    line-height: 1.5em;
+    font-size: .80em;
+}
+
+@media screen and (orientation: landscape) and (max-width: 850px) {
+    #education {
+        padding: 0px 5vw;
+    }
+
+    #education > div > img, #education > div > a > img {
+        max-height: 150px;
+        max-width: 150px;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #education {
+        padding: 0px 5vw;
+    }
+
+    #education > div {
+        margin-left: 0px;
+    }
+
+    #education > div > h3 {
+        margin-left: 0px;
+    }
+
+    #education > div > p, #education > div > h4 {
+        margin-left: 0px;
+        padding: 0px 10px;
+    }
+
+    #education > div > img, #education > div > a > img {
+        float: none;
+        max-height: 150px;
+        max-width: 150px;
+        height: auto;
+        width: auto;
+    }
+
+    .flexTable {
+        margin-left: 0px;
+        padding-left: 5vw;
+    }
+
+    .flexTable.col2 {
+        grid-template-columns: auto;
+        padding-left: 5vw;
+    }
 }

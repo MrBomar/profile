@@ -43,3 +43,30 @@
 .articleImage {
     align-self: center;
 }
+
+@media screen and (orientation: landscape) and (max-width: 850px) {
+    .articleCard {
+        width: calc(100vw - 20px);
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .articleCard {
+        width: calc(100vw - 20px);
+        margin: 8px;
+        border-radius: 10px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        margin: 10px 10px;
+    }
+
+    .articleData {
+        grid-row: 2
+    }
+
+    .articleImage {
+        grid-row: 1
+    }
+}
